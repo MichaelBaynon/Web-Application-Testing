@@ -1,10 +1,12 @@
 import React from "react";
 
-export default function Display() {
+const Display = props => {
   return (
     <>
-      <p>Balls: </p>
-      <p>Strikes: </p>
+      <p>Balls: {props.balls}</p>
+      <p>Strikes: {props.strikes}</p>
     </>
   );
-}
+};
+
+export default Display;
